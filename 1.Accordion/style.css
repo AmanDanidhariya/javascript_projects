@@ -1,0 +1,44 @@
+.section{
+    width: 100%;
+}
+.title{
+    font-size: 2rem;
+    font-weight: 900;
+    color: cadetblue;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+}
+.accordion_item{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.accordion_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: larger;
+}
+.accordion_title i{
+cursor: pointer;
+}
+.answer{
+    display: none;
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(205, 33, 24);
+}
+.accordion_title.active + .answer{
+    display: block;
+}
+.accordion_title.active i{
+    transform: rotate(180deg);
+}
