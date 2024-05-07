@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 1rem;
+  text-align: center;
+}
+.container {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.star-rating-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+.fa-star-o::before {
+  content: "\f006";
+  margin-left: 10px;
+  font-size: 50px;
+}
+.star-rating-container i:hover {
+  cursor: pointer;
+}
+.selected_rating_container {
+  font-size: 2rem;
+}
+.selected_rating_value {
+  font-weight: 600;
+  color: brown;
+}
+.fa-star-o:hover,
+.fa-star-o.active {
+  color: gold;
+}
