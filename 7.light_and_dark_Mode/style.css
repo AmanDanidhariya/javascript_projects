@@ -1,0 +1,78 @@
+:root {
+  --bg-color: #fff;
+  --text-color: #000;
+  --btn-bg-color: rgb(255, 213, 0);
+  --btn-text-color: #000;
+  --header-text-color: #000;
+}
+
+[data-theme="dark"] {
+  --bg-color: #000;
+  --text-color: #fff;
+  --btn-bg-color: green;
+  --btn-text-color: white;
+  --header-text-color: white;
+}
+
+body {
+  background-color: var(--bg-color);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* body.light {
+  background-color: aquamarine;
+}
+body.dark {
+  background-color: black;
+} */
+.container {
+  font-size: larger;
+}
+
+.btn {
+  border: none;
+  background-color: var(--btn-bg-color);
+  color: var(--text-color);
+  padding: 1rem;
+  border-radius: 4px;
+  font-size: larger;
+  font-weight: 800;
+  cursor: pointer;
+}
+.header {
+  color: var(--header-text-color);
+}
+/* .btn.light {
+  border: none;
+  background-color: rgb(255, 213, 0);
+  color:black;
+  padding: 1rem;
+  border-radius: 4px;
+  font-size: larger;
+  font-weight: 800;
+  cursor: pointer;
+}
+.btn.dark {
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  border-radius: 4px;
+  font-size: larger;
+  font-weight: 800;
+  cursor: pointer;
+} */
+.btn:hover {
+  background-color: rgb(251, 255, 0);
+}
+/* .header.light {
+  color: rgb(5, 142, 5);
+  text-transform: uppercase;
+}
+.header.dark {
+  color: white;
+  text-transform: uppercase;
+} */
